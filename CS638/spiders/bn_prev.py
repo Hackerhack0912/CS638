@@ -5,8 +5,8 @@ import os
 class QuotesSpider(scrapy.Spider):
     name = "bn_prev"
     def start_requests(self):
-		urls = ['http://www.barnesandnoble.com/w/the-hammer-of-thor-rick-riordan/1122934753?ean=9781368000307',]
-		for url in urls:
+		urls = ['http://www.barnesandnoble.com/w/the-hammer-of-thor-rick-riordan/1122934753?ean=9781368000307']
+        for url in urls:
 			yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
@@ -32,7 +32,7 @@ class QuotesSpider(scrapy.Spider):
             }
         #next_page = response.xpath('//main[@class="clearer"]//section[@class="main-content"]/section[@class="module-row content-shadow"]/div[@class="caroufredsel_wrapper"]/ul/li/a/@href').extract()
         next_page = response.xpath('//li/a/@href').extract_first()
-        
+
         next_page = "http://www.barnesandnoble.com"+next_page
         print (next_page)
         if next_page is not None:
@@ -46,5 +46,3 @@ class QuotesSpider(scrapy.Spider):
         #    if nextPage is not None and '/w/' in nextPage:
         #        nextPage = response.urljoin(nextPage)
         #        yield scrapy.Request(nextPage, callback=self.parse)
-        
-

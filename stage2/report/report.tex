@@ -1,0 +1,76 @@
+\documentclass[10pt, oneside]{article}   	
+\usepackage[margin=0.8in]{geometry}  
+\usepackage[dvips]{graphics}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{xspace}
+\usepackage{fancybox}
+\usepackage{graphicx,xspace,cite,verbatim,comment}
+\usepackage[demo]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref,array,color,balance,multirow}
+\usepackage{balance,float,url,amsfonts,alltt}
+\usepackage{mathtools,rotating,amsmath,amssymb}
+\usepackage{color,cite,ifpdf,fancyvrb,array,listings}
+\usepackage{algorithm,algpseudocode}
+\usepackage{tabularx}
+\usepackage{natbib}              		
+\geometry{letterpaper}                   		
+\usepackage{graphicx}		
+\usepackage{subcaption}		
+\usepackage{amssymb}
+
+%SetFonts
+
+%SetFonts
+
+
+\title{\textbf{CS 638 Project Stage 2 Report}}
+\author{Zhiwei Fan\hspace{7ex}
+	   Lingfeng Huang\hspace{7ex}
+	   Fang Wang\\
+	   zfan29@wisc.edu\hspace{3ex}
+	   lhuang58@wisc.edu\hspace{3ex}
+	   fwang64@wisc.edu
+	   }
+%\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle 
+
+\section*{Source Websites and Relevant Documentation}
+\begin{enumerate}
+  	\item Source Websites:\\
+		\textbf{Barnes\&Noble}: \textit{http://www.barnesandnoble.com}\\
+		\textbf{Goodreads}: \textit{https://www.goodreads.com}
+		
+	\item Corresponding Tables:\\
+		\textbf{tableA.csv}: table transformed from \textbf{Barnes\&Noble}'s data\\
+		\textbf{tableB.csv}: table transformed from \textbf{Goodreads}'s data
+		
+	\item Original Schema:\\
+		\textbf{tableA}(\underline{id}: integer, title: string, year: integer, pages: integer, day: integer, publisher: string, month: integer, authors: string, isbn3: string)\\
+		\textbf{tableB}(\underline{id}: integer, title: string, isbn: string, pageCount: integer, author: string, publisher: string, date: string)	
+\end{enumerate}
+
+\section*{Schema Transformation}
+According to \textit{Original Schema} in previous section, tableA and tableB originally have different schemas. After careful consideration, we decide to transform both tables to 
+be in the consistent schema shown as the following: 
+\vspace{1ex}
+ \\
+ \textbf{table}(\underline{id}: integer, title: string, author: string, publisher: string, pages: integer, year: integer, month: integer, day: integer, isbn: string)
+ 
+ \subsection*{Specific Steps of Transformation}
+ Most attributes in \textit{tableA} remain the same. The only change made to \textit{tableA} was \textit{renaming} attribute \texit{isbn3} to \textit{isbn}. For \textit{B}, the attribute
+ \textit{pageCount} was renamed to \textit{page}; attribute \textit{date} has been properly parsed and split into three separated attributes \textit{year}, \textit{month} and \textit{day}
+ by running appropriate python scripts on the original csv files \textit{tableA.csv} and \textit{tableB.csv}.
+ 
+ \subsection*{Set of Attribute: S}
+ According to the transformation steps we have described in the previous part, the attributes of the consistent schema in \textit{set S} is: \\
+\textit{ id, title, author, publisher, pages, year, month, day, isbn}.
+ 
+
+
+
+\end{document}  

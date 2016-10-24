@@ -66,7 +66,7 @@ be in the consistent schema shown as the following:
  \textit{year} was renamed to \textit{publishedYear},  \textit{month} to \textit{publishedMonth}, \textit{day} to \textit{publishedDay}. For \textit{B}
  the attribute \textit{isbn} was renamed to \textit{isnb3}, \textit{pageCount} was renamed to \textit{pages}; attribute \textit{date} has been properly 
  parsed and split into three separated attributes \textit{publishedYear}, \textit{publishedMonth} and \textit{publishedDay} by running appropriate python scripts on the original csv files \textit{tableA.csv} 
- and \textit{tableB.csv} (additional \textit{reordering} has also been done to further strengthen the consistence and make it more convenient when coming to the data analysis and clean stage).
+ and \textit{tableB.csv} (additional \textit{reordering} has also been done to further strengthen the consistence and make it more convenient when coming to the data analysis and cleaning stage).
  
  \subsection*{Set of Attribute: S}
  According to the transformation steps we have described in the previous part, the attributes of the consistent schema in \textit{set S} is: \\
@@ -77,7 +77,7 @@ be in the consistent schema shown as the following:
 We take Table A as example to show our analysis of attributes. The same process and ideas have been applied to Table B as well. Due to the space limitation, we omit the analysis of 
 Table B here and only display our results for Table A. 
 \subsection*{Missing Values}
-In Table A, there are only three attributes we have detected with \textit{missing value} issue and there are: \textit{pages}, \textit{publishedDay}, \textit{authors}. And the corresponding 
+In Table A, there are only three attributes we have detected with \textit{missing value} issue and there are: \textit{pages}, \textit{publishedDay}, \textit{authors}. The corresponding 
 missing value statistical data is reported in the following subsection.
 
 \subsubsection*{Relevant Statistical Data}
@@ -105,18 +105,18 @@ missing value statistical data is reported in the following subsection.
 \vspace{1ex}
 \noindent
 \\
-Instead of using \textit{missing values}, we use \textit{invalid values} for attribute \textit{publishedDay} for missing-value report. We do have found that every tuple in table A has attribute value 
+Instead of using \textit{missing values}, we use \textit{invalid values} for attribute in \textit{publishedDay} for missing-value report. We do have found that every tuple in table A has attribute value 
 \textit{publishedDay}, however, it's very obvious that some of those values are \textit{out of range} ( less than 1 or greater than 31). We regard these \textit{invalid values}
 equivalent to \textit{missing values}.    
 
 \subsubsection*{Discussion about Possible Solutions for Missing Values}
 For those values are missing in \textit{pages}, the most naive way we could think is to fill `0' for every entry that \textit{page} is missing. However, this simple solution might not 
 be feasible if \textit{pages} is considered as an important attribute when doing entity matching. Then there is high possibility we will \textit{miss} the match for those books that 
-have `0' pages. The more complicated and tedious solution would be go to a few other websites, fetching the pages information again for those have missing values. Taking this
+have `0' pages. The more complicated and tedious solution would be going to a few other websites, fetching the pages information again for those books that have missing values. Taking this
 solution could give us much more reliable ``data fixing'' but will bring much more tedious work and put us under the risk of ``new data cleaning" task for those new data (which
 is only used for fixing the \textit{real data} actually). For those values are missing in publishedDay and authors, since the number of values is very small, we could easily fix them
 by searching the information on the source website we used for crawling data and fill those missing values manually in a few minutes. The decision of our final solution for missing 
-values needs to be carefully considered based on both of the easiness of work and its influence on entity matching.  
+values needs to be carefully considered based on both of the easiness of work and its influence on entity matching quality. 
 
 \subsection*{Attributes Type Identification}
 As shown in the schema of table in \textit{schema transformation} section, the attributes we have selected are all quite easy to determine their types:
@@ -188,8 +188,21 @@ We intend to represent the published date of every book in \textit{year, month, 
 table B. We have already transform it into \textit{publishedYear, publishedMonth, publishedDay} as described in \textit{Specific Steps of Transformation}. All other 
 attributes have intuitive and simple standard attribute value format as shown in the schema.
 \subsection*{Synonyms Among Attribute Values Discussion}
+Fortunately, \textit{synonyms} is unlikely to happen among attribute values of any attribute in our final schema. \textit{synonyms} are more likely to be seen in 
+\textit{categorical attributes} and there is no categorical attributes in our schema.
+
 \subsection*{Attribute Values Sprinkle Issues}
+We do have found that for some tuples, attribute values are \textit{sprinkled} all over the item. For example, we have found that some tuples missed \textit{pages},
+\textit{publisher}, \texit{publishedYear}, \texit{publishedMonth} and \textit{publishedDay} and those missing values actually show in \textit{title}. The result of this issue
+result in both \textit{value missing} and \textit{outliner} (e.g., \textit{title} becomes long since it includes other \textit{wrong positioned attribute values}), which will 
+further influence the \textit{entity matching} stage. The reason for this issues might be attributed the possibility that the source website we crawled data from have 
+mis-positioned some attributes for some books or the lack of consideration of data structure and organization when crawling the data.
+
 \subsection*{Additional Data Quality Problems}
+Due to the \textit{data missing} and \textit{attribute values sprinkle issues}, some other data issues have also arisen and detected. For example, some attribute values
+of some tuples have been detected to be placed in the \textit{wrong position}. This is either because of some attribute values before the \textit{misplaced attribute} 
+have been missing or some previous values have been \textit{sprinkled} in other attributes.
+
 \section*{Software Tools Used in Analysis and Data Cleaning}
 We mainly used \textit{pandas} for data analysis (e.g., collecting information about missing values, length of title attribute, etc). In addition, we have used \textit{csv package} 
 in \textit{python} to do relevant schema transformation and partial data cleaning.  

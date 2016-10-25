@@ -62,7 +62,7 @@ be in the consistent schema shown as the following:
  \textbf{table}(\underline{id}: integer, title: string, authors: string, ISNB13: string,  pages: integer, publisher: string, publishedYear: integer, publishedMonth: integer, publishedDay: integer,)
  
  \subsection*{Specific Steps of Transformation}
- Most attributes in \textit{tableA} remain the same. The only change made to \textit{tableA} was that \textit{ISBN3} was renamed to be \textit{isbn3},
+ Most attributes in \textit{tableA} remain the same. The only change made to \textit{tableA} was that \textit{isbn13} was renamed to be \textit{isbn13},
  \textit{year} was renamed to \textit{publishedYear},  \textit{month} to \textit{publishedMonth}, \textit{day} to \textit{publishedDay}. For \textit{B}
  the attribute \textit{isbn} was renamed to \textit{isnb3}, \textit{pageCount} was renamed to \textit{pages}; attribute \textit{date} has been properly 
  parsed and split into three separated attributes \textit{publishedYear}, \textit{publishedMonth} and \textit{publishedDay} by running appropriate python scripts on the original csv files \textit{tableA.csv} 
@@ -125,12 +125,12 @@ As shown in the schema of table in \textit{schema transformation} section, the a
 \textit{id}: integer, \textit{title}: string, \textit{authors}: string, \textit{ISNB3}: string,  \textit{pages}: integer, \textit{publisher}: string, \textit{publishedYear}: integer, \textit{publishedMonth}: integer, \textit{publishedDay}: integer
 \vspace{1ex}
 \\
-\textit{publishedYear} , \textit{publishedMonth} and \textit{publishedDay} all have clear meaningful numerical domains and thus are identified as \textit{integer}. Every books's \textit{ISBN3} is composed of 13 numbers, which is not in the integer type value range  -2,147,483,648 to 2,147,483,647. Thus we identify \textit{ISBN3} as string type instead.
+\textit{publishedYear} , \textit{publishedMonth} and \textit{publishedDay} all have clear meaningful numerical domains and thus are identified as \textit{integer}. Every books's \textit{isbn13} is composed of 13 numbers, which is not in the integer type value range  -2,147,483,648 to 2,147,483,647. Thus we identify \textit{isbn13} as string type instead.
 The number of total books could perfectly fit in the integer type value range, so we identify \textit{id}, the attribute we generated during the data crawling stage, as integer type.
 \textit{title} and \textit{authors} are intuitively identified as string type and \textit{pages} is identified as integer type.
 
 \subsection*{Textual Attribute Value Length Statistical Data Report}
-There are \textit{four} textual attributes: \textit{title}, \textit{authors}, \textit{publisher}, \textit{ISBN3}
+There are \textit{four} textual attributes: \textit{title}, \textit{authors}, \textit{publisher}, \textit{isbn13}
 \vspace{0.5ex}
 \\
 \textit{title}: \\
@@ -151,7 +151,7 @@ There are \textit{four} textual attributes: \textit{title}, \textit{authors}, \t
 \textbf{average length}: 19.64
 \vspace{0.5ex}
 \\
-\textit{ISBN3}:\\ 
+\textit{isbn13}:\\ 
 \textbf{maximal length}: 12\\
 \textbf{minimal length}: 13\\
 \textbf{average length}: 13

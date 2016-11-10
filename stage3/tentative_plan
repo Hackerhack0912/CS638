@@ -1,0 +1,11 @@
+Blocking:
+
+Attributes Selected:
+pages, publishedYear, publishedMonth, publishedDay
+
+Do blocking on "pages" -> get result A
+Do blocking on "publishedyear" -> get result B
+Do blocking on "publishedMonth" -> get result C
+Do blocking on "publishedDay" -> get result D
+
+Union(A, B, C, D)

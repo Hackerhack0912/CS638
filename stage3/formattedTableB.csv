@@ -430,7 +430,7 @@ id,title,authors,ISBN13,pages,publisher,publishedYear,publishedMonth,publishedDa
 428,Enterprise Java with UML [With CDROM],"C.T. Arrington,Susan Cardinale,Hugo Scavino",9780471386803,451,John Wiley & Sons,2001,1,26
 429,Java Concepts: Early Objects,Cay S. Horstmann,9781118431122,704,John Wiley & Sons,2012,12,26
 430,Java Application Architecture: Modularity Patterns with Examples Using OSGi,Kirk Knoernschild,9780321247131,384,Prentice Hall,2012,3,25
-430,Data Structures in Java: From Abstract Data Types to the Java Collections Framework,Simon Gray,9780321392794,658,Addison Wesley Publishing Company,2006,10,1
+431,Data Structures in Java: From Abstract Data Types to the Java Collections Framework,Simon Gray,9780321392794,658,Addison Wesley Publishing Company,2006,10,1
 432,"Java Servlets [With Contains Java Servlet API, Source Code, JDK 1.2...]",Karl Moss,9780079137791,512,McGraw-Hill Companies,1998,7,6
 433,Client/Server Programming with Java and CORBA [With Includes Over 15 Java-Based Client-Server...],"Robert Orfali,Dan Harkey",9780471163510,655,John Wiley & Sons,1997,1,1
 434,A Programmer's Guide to Java Se 8 Oracle Certified Associate (OCA),"Khalid Mughal,Rolf Rasmussen",9780132930215,688,Addison-Wesley Professional,2016,7,4
@@ -1007,9 +1007,9 @@ id,title,authors,ISBN13,pages,publisher,publishedYear,publishedMonth,publishedDa
 1005,Java Event Handling [With CDROM],Grant Palmer,9780130418029,624,Prentice Hall PTR,2001,8,8
 1006,Professional WebObjects 5.0 with Java,"Thomas Termini,Ben Galbraith",9781861004314,488,Wrox Press,2001,10,23
 1007,Jogja The Real Java,Tourism and Culture Office Yogyakarta,,,"Tourism and Culture Office, Yogyakarta City Government",2011,,
-1007,ACE Your Java Interview,Jennifer Fu,,176,Tech Collections,2013,4,26
+1008,ACE Your Java Interview,Jennifer Fu,,176,Tech Collections,2013,4,26
 1009,Java and Mac OS X,T. Gene Davis,9780470525111,492,John Wiley & Sons,2010,5,3
-1009,Flex 3 with Java,Satish Kore,9781847195340,304,Packt Publishing,2009,6,30
+1010,Flex 3 with Java,Satish Kore,9781847195340,304,Packt Publishing,2009,6,30
 1011,Programmazione in Java: seconda edizione,"Roberto Bruni,Andrea Corradini,Vincenzo Gervasi",9788850330690,536,Apogeo,2011,9,
 1012,Programming with Alice and Java,"John   Lewis,Peter DePasquale",9780321512093,360,Addison-Wesley,2008,2,22
 1013,Java 8 Recipes,Josh Juneau,9781430268277,640,Apress,2014,9,13
@@ -1136,7 +1136,7 @@ id,title,authors,ISBN13,pages,publisher,publishedYear,publishedMonth,publishedDa
 1134,Java,"Donald Maclaine Campbell,Past and Present",9781297462054,702,Scholar's Choice,2015,2,20
 1135,Java,"Frank Carrano,Walter J. Savitch",9780132366373,,,,,
 1136,Codenotes for Java: Intermediate and Advanced Language Features,Gregory Brill,9780812991925,256,Random House Trade Paperbacks,2002,1,23
-1136,Java,Randall Raus,9780878912599,128,Research & Education Association,,,
+1137,Java,Randall Raus,9780878912599,128,Research & Education Association,,,
 1138,Advanced Java 2 Development for Enterprise Applications,"Clifford J. Berg,Cliff Berg",9780130848758,812,Prentice Hall PTR,1999,12,14
 1139,The Struts Framework: Practical Guide for Java Programmers,Sue Spielman,9781558608627,137,Morgan Kaufmann Publishers,2002,11,2
 1140,Assembly Language and Computer Architecture Using C++ and Java,Anthony J. Dos Reis,9780534405274,773,Course Technology,2004,1,12
@@ -1259,7 +1259,7 @@ id,title,authors,ISBN13,pages,publisher,publishedYear,publishedMonth,publishedDa
 1257,Java Tutorial,John Wason,,344,,2015,3,27
 1258,Basiscursus Java,Leen Ammeraal,,266,Academic Service,2000,5,
 1259,Journeys in Java,"Marie  Gray,David Gray",9780908990894,186,David Ling Publishing,2003,,
-1259,Music in Java,Jaap Kunst,9789024715190,678,Nijhoff,1987,2,28
+1260,Music in Java,Jaap Kunst,9789024715190,678,Nijhoff,1987,2,28
 1261,Java Script,Antje Hofmann,9782742922413,394,Micro application,2001,,
 1262,Java Rules,Douglas    Dunn,9780201709162,880,Addison-Wesley Professional,2001,10,10
 1263,East of Java,Scott Amour,9781420844184,236,Authorhouse,2005,5,1
@@ -1308,7 +1308,7 @@ id,title,authors,ISBN13,pages,publisher,publishedYear,publishedMonth,publishedDa
 1306,"Music in Central Java: Experiencing Music, Expressing Culture (Global Music Series)","Benjamin Brinner,Bonnie C. Wade,Patricia Shehan Campbell",195147375,192,OUP USA,2007,4,26
 1307,"Java Data Access: JDBC, Jndi, and Jaxp",Todd M. Thomas,9780764548468,572,Wiley,2002,1,29
 1308,"Web Technologies: Tcp/Ip Architecture And Java Programming, 2nd Edition","Achyut S Godbole,Atul Kahate",9780070142954,,,,,
-1308,Java: A Framework for Programming and Problem Solving,Kenneth A. Lambert,9780534382773,600,Course Technology,2001,7,26
+1309,Java: A Framework for Programming and Problem Solving,Kenneth A. Lambert,9780534382773,600,Course Technology,2001,7,26
 1310,Java and the AS/400: Practical Examples Using VisualAge for Java [With CD-ROM],Daniel Darnell,9781583040331,238,29th Street Press,1999,8,1
 1311,Oracle & Java Development,Bulusu Lakshman,9780672321177,500,Sams,2001,8,20
 1312,Java Outside in [With CD],"Ethan D. Bolker,Bill  Campbell",9780521010870,328,Cambridge University Press,2003,6,30
@@ -1703,7 +1703,7 @@ id,title,authors,ISBN13,pages,publisher,publishedYear,publishedMonth,publishedDa
 1701,Nitty Gritty Java 2,Florian Hawlitzek,9783827320285,,,,,
 1702,Programmeren met Java,"Tim Ritchey,Jan Rietdijk",9789039503904,377,Academic Service,1996,,
 1703,Journeys to Java by a Siamese King,Imtip Pattajoti Suharto,9789799299321,168,ITB Press,2001,,
-1702,Java 5 &Amp 6,Robert Chevallier,9782744072192,245,Pearson Education,2007,,
+1704,Java 5 &Amp 6,Robert Chevallier,9782744072192,245,Pearson Education,2007,,
 1705,Web Programming With Java,Michael Girdley,9781575211138,500,Sams,1996,1,1
 1706,Bali. Java. Lombok,Roland Dusik,9783770123780,,,,,
 1707,Java Networking And Communications,Todd Courtois,9780138504540,317,Prentice Hall,1998,1,1
@@ -2033,7 +2033,7 @@ id,title,authors,ISBN13,pages,publisher,publishedYear,publishedMonth,publishedDa
 2031,Hands-On Database,Steve Conger,,216,Prentice Hall,2011,4,29
 2032,Database Systems,Peter Rob,9781423938842,0,Cengage Learning,2006,3,28
 2033,Genetic Databases,Martin J. Bishop,9780121016258,320,Academic Press,1999,9,27
-2033,Database Design,Gio Wiederhold,9780070701328,751,McGraw-Hill Companies,1983,3,1
+2034,Database Design,Gio Wiederhold,9780070701328,751,McGraw-Hill Companies,1983,3,1
 2035,Computer Databases,Andrew M. Brown,,44,,2013,12,6
 2036,Training Kit (Exam 70-462): Administering Microsoft SQL Server 2012 Databases,"Orin Thomas,Neil Hambly,Peter D. Ward",9780735666078,624,Microsoft Press,2012,7,16
 2037,Database System Concepts,"Hank Korth,Hank Korth",9780070447523,546,McGraw-Hill Companies,1986,6,1
@@ -2199,7 +2199,7 @@ id,title,authors,ISBN13,pages,publisher,publishedYear,publishedMonth,publishedDa
 2197,Spatial Databases: With Application to GIS,Philippe Rigaux,9781558605886,410,Morgan Kaufmann Publishers,2001,6,1
 2198,Soft Cinema: Navigating the Database,"Lev Manovich,Andreas Kratky",9780262134569,40,Mit Press,2005,5,20
 2199,Database Programming with C#,Carsten Thomsen,9781590590102,504,Apress,2002,4,10
-2199,Database Solutions: A Step By Step Approach To Building Databases,"Thomas Connolly,Carolyn Begg",9780201674767,,Addison-Wesley Professional,1999,12,23
+2200,Database Solutions: A Step By Step Approach To Building Databases,"Thomas Connolly,Carolyn Begg",9780201674767,,Addison-Wesley Professional,1999,12,23
 2201,Expert Oracle Database 10g Administration,Sam R. Alapati,9781590594513,1276,Apress,2006,3,28
 2202,Database Management Systems,"Raghu Ramakrishnan,Ramakrishnan",9780071231510,936,McGraw Hill Higher Education,2002,9,1
 2203,Oracle Database 11g PL/SQL Programming,Michael McLaughlin,9780071494458,835,McGraw-Hill/Osborne Media,2008,4,1
@@ -2252,7 +2252,7 @@ id,title,authors,ISBN13,pages,publisher,publishedYear,publishedMonth,publishedDa
 2250,"The Investigative Reporter's Handbook: A Guide to Documents, Databases, and Techniques",Brant Houston,9780312442651,608,Bedford/St. Martin's,2008,11,7
 2251,Database Design,"Ryan K. Stephens,Ronald R. Plew",752063317587,528,Sams,2000,11,30
 2252,The Essence of Databases,Fred Rolland,9780137278275,240,Prentice Hall PTR,1997,11,10
-2252,Database Security,"Alfred Basta,Melissa Zgola",9781435453906,320,Cengage Learning,2011,7,12
+2253,Database Security,"Alfred Basta,Melissa Zgola",9781435453906,320,Cengage Learning,2011,7,12
 2254,Database 101,Guy Kawasaki,9780938151524,154,Peachpit Press,1991,8,1
 2255,Oracle Essentials: Oracle Database 11g,"Rick Greenwald,Jonathan Stern,Robert Stackowiak",9780596514549,408,O'Reilly Media,2007,11,8
 2256,Beginning Database Design: From Novice to Professional,Clare Churcher,9781590597699,240,Apress,2007,2,1
@@ -2666,8 +2666,8 @@ id,title,authors,ISBN13,pages,publisher,publishedYear,publishedMonth,publishedDa
 2664,Database Applications Semantics,Meersman,9780412726002,613,Springer,1996,10,31
 2665,Database Systems for Advanced Applications,"Lei Chen,Qing Liu,Ke Deng,Chengfei Liu",9783642042041,376,Springer,2009,9,3
 2666,Sql And Relational Databases,"Soren Vang,Søren Vang",9780915391424,,Microtrend Books,1990,10,1
-2666,Nontraditional Database Systems,Yoshifumi Masunaga,9781280023583,,Taylor & Francis Group,2002,8,1
-2667,Relational Database Design,Charles J. Wertz,9780849374500,298,CRC Press,1993,2,17
+2667,Nontraditional Database Systems,Yoshifumi Masunaga,9781280023583,,Taylor & Francis Group,2002,8,1
+2668,Relational Database Design,Charles J. Wertz,9780849374500,298,CRC Press,1993,2,17
 2669,Behavior Modification Database & Strategies,Daniel Loeb,9781411684362,84,Lulu Press,,,
 2670,Sybase Database Administrator's Handbook,Brian Hitchcock,9780133574777,520,Prentice Hall PTR,1995,11,9
 2671,Making Database Management Work,Jan L. Harrington,9780030281136,381,Dryden Press,1989,2,1
@@ -3585,7 +3585,7 @@ id,title,authors,ISBN13,pages,publisher,publishedYear,publishedMonth,publishedDa
 3583,"Flash XML Applications: Use AS2 and AS3 to Create Photo Galleries, Menus, and Databases [With CDROM]",Joachim Bernhard Schnier,9780240809175,322,Focal Press,2007,10,1
 3584,Proceedings 2002 VLDB Conference: 28th International Conference on Very Large Databases (VLDB) (Proceedings of the International Conference on Very Large Databases (Vldb)),Raghu Ramakrishnan,9781558608696,1176,"Morgan Kaufmann Publishers Inc,US",2002,8,29
 3585,"Advances in Database Technology - Edbt 2004: 9th International Conference on Extending Database Technology, Heraklion, Crete, Greece, March 14-18, 2004, Proceedings",Elisa Bertino,9783540212003,882,Springer,2004,4,1
-3584,MCSE Microsoft SQL Server 2000 Database Design and Implementation Readiness Review  Exam 7,"Sharon Bjeletich,Eddy Hahn3586",9780735612518,232,Microsoft Press,2001,5,4
+3586,MCSE Microsoft SQL Server 2000 Database Design and Implementation Readiness Review  Exam 7,"Sharon Bjeletich,Eddy Hahn3586",9780735612518,232,Microsoft Press,2001,5,4
 3587,Zero Downtime Database Upgrade & Active Active Replication Using Oracle GoldenGate 11g Release 2 ,Kashif Aslam,9781477666180,268,CreateSpace Independent Publishing Platform,2012,7,12
 3588,Beginning SQL Server Express Database Applications: With Visual Basic Express and Visual Web Developer Express from Novice to Professional,Rick Dobson,9781590595237,596,Apress,2006,4,18
 3589,Study Guide for 1Z0-146: Oracle Database 11g: Advanced PL/SQL (Oracle Certification Prep),Matthew Morris,,173,,2013,2,20

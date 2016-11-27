@@ -3,15 +3,14 @@ row:
 _id, ltable_id, rtable_id, 
 [title relevant feature vectors], 
 [author relevant feature vectors], 
-[publisher relevant feature vectors], 
-[author relevant feature vectors], 
-[Numerical relevant feature vectors]
+[publisher relevant feature vectors],
+[Numerical relevant feature vectors] (publishedYear, publishedMonth, putlishedDay, pages)
 
 Specific construction of features:
 
 [title relevant feature vectors]:
 
-py_entitymatching.affine(s1, s2),
+py_entitymatching.affine(s1, s2),  +prefix "title_" +suffix "_score"
 py_entitymatching.hamming_dist(s1, s2),
 py_entitymatching.hamming_sim(s1, s2),
 py_entitymatching.lev_dist(s1, s2),
@@ -20,7 +19,7 @@ py_entitymatching.jaro(s1, s2),
 py_entitymatching.jaro_winkler(s1, s2),
 py_entitymatching.needleman_wunsch(s1, s2),
 py_entitymatching.smith_waterman(s1, s2),
-#py_entitymatching.tok_qgram(s,q) 
+#py_entitymatching.tok_qgram(s,q) -> return list (q=3)
 *py_entitymatching.jaccard(arr1, arr2),
 *py_entitymatching.cosine(arr1, arr2),
 *py_entitymatching.overlap_coeff(arr1, arr2),
@@ -62,27 +61,9 @@ py_entitymatching.smith_waterman(s1, s2),
 *py_entitymatching.overlap_coeff(arr1, arr2),
 *py_entitymatching.dice(arr1, arr2),
 *py_entitymatching.monge_elkan(arr1, arr2)
- 
-[author relevant feature vectors]:
 
-py_entitymatching.affine(s1, s2),
-py_entitymatching.hamming_dist(s1, s2),
-py_entitymatching.hamming_sim(s1, s2),
-py_entitymatching.lev_dist(s1, s2),
-py_entitymatching.lev_sim(s1, s2),
-py_entitymatching.jaro(s1, s2),
-py_entitymatching.jaro_winkler(s1, s2),
-py_entitymatching.needleman_wunsch(s1, s2),
-py_entitymatching.smith_waterman(s1, s2),
-#py_entitymatching.tok_qgram(s,q) 
-*py_entitymatching.jaccard(arr1, arr2),
-*py_entitymatching.cosine(arr1, arr2),
-*py_entitymatching.overlap_coeff(arr1, arr2),
-*py_entitymatching.dice(arr1, arr2),
-*py_entitymatching.monge_elkan(arr1, arr2)
-
-[Numerical relevant feature vectors]:
-
+[Numerical relevant feature vectors] (Year, Month, Day, Pages):
+//two each
 py_entitymatching.rel_diff(d1, d2),
 py_entitymatching.abs_norm(d1, d2)
 

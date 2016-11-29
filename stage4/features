@@ -62,7 +62,7 @@ py_entitymatching.smith_waterman(s1, s2),
 *py_entitymatching.dice(arr1, arr2),
 *py_entitymatching.monge_elkan(arr1, arr2)
 
-[Numerical relevant feature vectors] (Year, Month, Day, Pages):
+[Numerical relevant feature vectors] (Year, Month, Pages):
 //two each
 py_entitymatching.rel_diff(d1, d2),
 py_entitymatching.abs_norm(d1, d2)

@@ -23,7 +23,7 @@ I_label = pd.read_csv('I_label.csv', header=0)
 I_label = np.array(I_label['gold'])
 for i in range(0, 43):
     I_data_temp = I_data
-    I_data_temp.drop(I_data_temp.columns[0], axis=1, inplace=True)
+    I_data_temp.drop(I_data_temp.columns[i], axis=1, inplace=True)
 
     I_data = np.array(I_data_temp)
 

@@ -1,0 +1,35 @@
+Max score so far: 0.894630769231
+Before removing any column
+Max score so far: 0.896507692308
+Column removed: title_affine_score
+Max score so far: 0.896844871795
+Column removed: title_lev_dist_score
+Max score so far: 0.901166666667
+Column removed: title_lev_sim_score
+Max score so far: 0.902608974359
+Column removed: title_jaro_winkler_score
+Max score so far: 0.903348717949
+Column removed: title_monge_elkan_score
+* removed column: author_affine_score
+current max score: 0.903348717949
+Max score so far: 0.89893974359
+Before removing any column
+Max score so far: 0.900574358974
+Column removed: title_affine_score
+Max score so far: 0.902865384615
+Column removed: title_overlap_coeff_score
+Max score so far: 0.903265384615
+Column removed: publisher_lev_sim_score
+Max score so far: 0.904579487179
+Column removed: publisher_needleman_wunsch_score
+* removed column: publisher_smith_waterman_score
+current max score: 0.904579487179
+Max score so far: 0.899741025641
+Before removing any column
+Max score so far: 0.901376923077
+Column removed: title_dice_score
+Max score so far: 0.901726923077
+Column removed: author_affine_score
+Max score so far: 0.902078205128
+Column removed: author_monge_elkan_score
+No improvement in the last run

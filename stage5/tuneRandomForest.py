@@ -104,7 +104,10 @@ results = rfClf.predict(C_data)
 #print(type(results))
 #scores = precision_recall_fscore_support(J_label, results, average='binary')
 #print(scores)
-print(results)
+print(len(results))
+print(*results, sep='\n')
+
+
 '''
 # Decision Tree
 Clf = tree.DecisionTreeClassifier()

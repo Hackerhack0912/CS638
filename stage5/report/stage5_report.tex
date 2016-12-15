@@ -1,0 +1,63 @@
+\documentclass[10pt, oneside]{article}   	
+\usepackage[margin=0.8in]{geometry}  
+\usepackage[dvips]{graphics}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{xspace}
+\usepackage{fancybox}
+\usepackage{graphicx,xspace,cite,verbatim,comment}
+\usepackage{mathtools,rotating,amsmath,amssymb}
+\usepackage{color,cite,ifpdf,fancyvrb,array,listings}
+\usepackage{algorithm,algpseudocode}
+\usepackage{tabularx}
+
+
+%SetFonts
+
+%SetFonts
+
+
+\title{\textbf{Stage5 Data Analysis}}
+\author{Zhiwei Fan\hspace{7ex}
+	   Lingfeng Huang\hspace{7ex}
+	   Fang Wang\\
+	   zfan29@wisc.edu\hspace{3ex}
+	   lhuang58@wisc.edu\hspace{3ex}
+	   fwang64@wisc.edu
+	   }
+%\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle 
+
+\section*{Term explanation}
+\textit{tableA}: book data obtained from Barnes and Noble. \\ 
+\textit{tableB}: book data obtained from Good reads. \\ 
+\textit{scheme of both tables}: id, title,	authors, ISBN13,	pages,	publisher,	publishedYear,  publishedMonth, publishedDay\\
+\textit{tableC}: the table after blocking stage.\\ 
+\textit{tableE}: the table after merging stage. It has the same schema as tableA and tableB, but its id is not obtained from tableA nor tableB. Its id is new and in increasing order start from 0.\\ 
+\section*{TODO}
+random forest scores?
+\section*{Description of table merging}
+During the project stage 4, we chose \textit{random forest} as our final selected model because of its high F1 score.  
+Thus, in this final stage, we first obtained the prediction result from running \textit{random forest} to the blocking tableC from stage4 (matching tuple pairs with information from tableA and tableB). By looking at the prediction boolean array generated from random forest, we generate a intermediate table containing tuple pairs that are predicted to be matched. We call this filtered-table. Our goal of merging is to ensure we find all unique tuples from tableA and tableB so we need to use this filtered-table in the next stage.
+
+\subsubsection*{\textit{how did we generate merged table?}}
+To generate tableE, we first keep all the data from tableA (always select the values from the tuple from table A) because tableA has well formatted data and there are lots of missing data in tableB. Thus, when there is a match, tableA's data has higher priority than data in tableB. After this step, we still have't added the tuples that are not present in tableA but present in tableB. Then, using the filtered-table from the last step, we are able to know which tuples in tableB have already presented in the tableA. We don't need these data so we take tableB and find all tuples which IDs are not  present in the filtered-table. These are the tuples that are not present in tableA but present in tableB. By adding these tuples to tableE as well, we have a complete tableE.
+\subsubsection*{\textit{Statistics on Table E}}
+\textbf{schema of table E}: {id, title,	authors, ISBN13,	pages,	publisher,	publishedYear,  publishedMonth, publishedDay}\\
+\textbf{number of tuples in table E}: 7560\\
+\textbf{examples of Table E}:\\
+
+\section*{Data analysis}
+\subsubsection*{\textit{Which }}
+
+
+
+
+\section*{Approximate Time Estimation}
+
+\section*{Discussion}
+
+
+\end{document}  
